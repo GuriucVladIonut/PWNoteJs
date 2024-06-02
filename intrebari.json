@@ -1,0 +1,52 @@
+[
+    {
+        "text": "Care dintre următoarele este un citric?",
+        "raspunsuri": ["Banana 🍌", "Căpșună 🍓", "Măr 🍏", "Portocală 🍊"],
+        "correct": "Portocală 🍊"
+    },
+    {
+        "text": "Ce fruct este cunoscut pentru conținutul său ridicat de potasiu?",
+        "raspunsuri": ["Strugure 🍇", "Ananas 🍍", "Pepene galben 🍈", "Banana 🍌"],
+        "correct": "Banana 🍌"
+    },
+    {
+        "text": "Din ce fruct se face vinul tradițional?",
+        "raspunsuri": ["Piersică 🍑", "Kiwi 🥝", "Strugure 🍇", "Mango 🥭"],
+        "correct": "Strugure 🍇"
+    },
+    {
+        "text": "Care fruct are coaja spinoasă și un gust dulce-acru?",
+        "raspunsuri": ["Durian 🌟", "Pere 🍐", "Kiwi 🥝", "Măr 🍏"],
+        "correct": "Durian 🌟"
+    },
+    {
+        "text": "Ce fruct este adesea folosit pentru a face cidru?",
+        "raspunsuri": ["Portocală 🍊", "Banana 🍌", "Măr 🍏", "Căpșună 🍓"],
+        "correct": "Măr 🍏"
+    },
+    {
+        "text": "Care dintre următoarele fructe este cunoscut pentru conținutul său ridicat de vitamina C?",
+        "raspunsuri": ["Kiwi 🥝", "Pepene galben 🍈", "Mango 🥭", "Căpșună 🍓"],
+        "correct": "Kiwi 🥝"
+    },
+    {
+        "text": "Ce fruct are semințe mici și negre la interior și o coajă verde și pufoasă?",
+        "raspunsuri": ["Pere 🍐", "Kiwi 🥝", "Banana 🍌", "Strugure 🍇"],
+        "correct": "Kiwi 🥝"
+    },
+    {
+        "text": "Care dintre următoarele fructe este cunoscut pentru proprietățile sale antioxidante?",
+        "raspunsuri": ["Portocală 🍊", "Strugure 🍇", "Căpșună 🍓", "Mango 🥭"],
+        "correct": "Căpșună 🍓"
+    },
+    {
+        "text": "Ce fruct este adesea folosit în prepararea sosurilor asiatice?",
+        "raspunsuri": ["Durian 🌟", "Ananas 🍍", "Mango 🥭", "Pepene galben 🍈"],
+        "correct": "Mango 🥭"
+    },
+    {
+        "text": "Care dintre următoarele fructe este cunoscut pentru utilizarea sa în producția de ulei esențial?",
+        "raspunsuri": ["Piersică 🍑", "Măr 🍏", "Portocală 🍊", "Banana 🍌"],
+        "correct": "Portocală 🍊"
+    }
+]

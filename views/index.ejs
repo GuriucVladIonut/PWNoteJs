@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Homepage</h1>
+        <% if (utilizator) { %>
+            <p>Bine ai venit, <%= utilizator.nume %> <%= utilizator.prenume %>!</p>
+            <a href="/autentificare">Deconectare</a>
+            <a href="/vizualizare-cos">Vizualizare coș</a>
+        <% } else { %>
+            <p>Bine ai venit!</p>
+            <a href="/autentificare">Autentificare</a>
+        <% } %>
+
+        <h2>Produse</h2>
+        <ul>
+            <% produse.forEach(produs => { %>
+                <li>
+                    <%= produs.nume %> - <%= produs.pret %> RON
+                    <% if (utilizator) { %>
+                        <form action="/adaugare_cos" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="<%= produs.id %>">
+                            <button type="submit">Adaugă în coș</button>
+                        </form>
+                    <% } %>
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+</body>
+</html>

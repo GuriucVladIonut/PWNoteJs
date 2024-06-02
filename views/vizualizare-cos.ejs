@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coșul de cumpărături</title>
+    <link rel="stylesheet" href="/public/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Coșul de cumpărături</h1>
+        <% if (cosProduse.length > 0) { %>
+            <ul>
+                <% cosProduse.forEach(produs => { %>
+                    <li>
+                        <%= produs.nume %> - <%= produs.pret %> RON
+                    </li>
+                <% }); %>
+            </ul>
+            <p>Total: <%= total %> RON</p>
+            <!-- Formular pentru butonul "Plătește" -->
+            <form action="/finalizeaza-comanda" method="post">
+                <button type="submit" name="plateste">Plătește</button>
+            </form>
+        <% } else { %>
+            <p>Coșul de cumpărături este gol.</p><br>
+            <p>Plata a fost efectuată cu succes!</p>
+        <% } %>
+        <a href="/">Înapoi la pagina principală</a>
+    </div>
+</body>
+</html>

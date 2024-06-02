@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+html{
+    background-image: url("/background.jpg");
+}
+
+.container {
+    background-color: rgba(37, 173, 48, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px; 
+    max-width: 800px; 
+}
+
+#navbar-container {
+    display: flex;
+    justify-content: center;
+    background-color: #127259; 
+    font-size: 20px;
+}
+
+#navbar-container a {
+    padding: 10px 20px; /* Adaugă spațiu în jurul textului */
+    color: rgb(0, 157, 76); /* Culoarea textului */
+    text-decoration: none; /* Elimină sublinierea */
+}
+
+#navbar-container a:hover {
+    background-color: #111; /* Închide culoarea de fundal la hover */
+}
+
+#navbar-container .active {
+    background-color: #04AA6D; /* Setează culoarea activă */
+}

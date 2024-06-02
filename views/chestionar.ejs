@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chestionar Fructe</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/chestionar">Chestionar</a>
+        <a href="/autentificare">Autentificare</a>
+    </nav>
+    <div class="container">
+        <h1>Chestionar Fructe</h1>
+        <form action="/rezultat-chestionar" method="POST">
+            <% intrebari.forEach((intrebare, index) => { %>
+                <div>
+                    <p><%= intrebare.text %></p>
+                    <% intrebare.raspunsuri.forEach((raspuns, i) => { %>
+                        <div>
+                            <input type="radio" id="q<%= index %>r<%= i %>" name="intrebare<%= index %>" value="<%= raspuns %>">
+                            <label for="q<%= index %>r<%= i %>"><%= raspuns %></label>
+                        </div>
+                    <% }) %>
+                </div>
+            <% }) %>
+            <button type="submit">Trimite Raspunsurile</button>
+        </form>
+    </div>
+</body>
+</html>
